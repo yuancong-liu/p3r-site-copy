@@ -1,3 +1,7 @@
+# Persona 3 Reload landing page copy
+
+This is a working-in-progress copy of [Persona 3 Reload landing page](https://p3re.jp/) about to use Lenis, framer-motion or GSAP.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -11,7 +15,7 @@ yarn dev
 # or
 pnpm dev
 # or
-bun dev
+bun dev # preferred
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
