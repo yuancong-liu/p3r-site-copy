@@ -1,11 +1,17 @@
 {
   "root": true,
   "env": {
-    "es2017": true
+    "es2020": true,
+    "browser": true
   },
   "parserOptions": { "ecmaVersion": 8 },
-  "extends": ["next/core-web-vitals", "prettier"],
-  "plugins": ["unused-imports", "@typescript-eslint"],
+  "extends": [
+    "prettier",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "plugins": ["unused-imports", "@typescript-eslint", "react-refresh"],
   "rules": {
     // JavaScript
     "no-useless-rename": "warn",
@@ -61,8 +67,13 @@
         ],
         "pathGroupsExcludedImportTypes": ["react"]
       }
+    ],
+    "react-refresh/only-export-components": [
+      "warn",
+      { "allowConstantExport": true }
     ]
   },
+  "ignorePatterns": ["dist", ".eslintrc.cjs"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],

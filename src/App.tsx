@@ -2,7 +2,7 @@ import { Header } from '@/components/header';
 import { Leading } from '@/components/leading';
 import { Pv } from '@/components/pv';
 
-const Home = () => {
+function App() {
   return (
     <main>
       <Header />
@@ -10,6 +10,6 @@ const Home = () => {
       <Pv />
     </main>
   );
-};
+}
 
-export default Home;
+export default App;
