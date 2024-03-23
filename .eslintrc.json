@@ -8,6 +8,8 @@
   "extends": [
     "prettier",
     "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react-hooks/recommended"
   ],
@@ -23,6 +25,8 @@
     // React
     "react/jsx-curly-brace-presence": "warn",
     "react/jsx-boolean-value": "warn",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
 
     // Types
     "@typescript-eslint/array-type": ["warn", { "default": "array-simple" }],
@@ -33,7 +37,6 @@
         "format": ["PascalCase"]
       }
     ],
-    "@next/next/no-img-element": "off",
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
@@ -68,12 +71,13 @@
         "pathGroupsExcludedImportTypes": ["react"]
       }
     ],
+    "import/no-unresolved": "off",
     "react-refresh/only-export-components": [
       "warn",
       { "allowConstantExport": true }
     ]
   },
-  "ignorePatterns": ["dist", ".eslintrc.cjs"],
+  "ignorePatterns": ["dist", ".eslintrc.json"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],

@@ -6,4 +6,4 @@ export const Pv = () => {
       <button className={styles['play']}>PLAY TRAILER</button>
     </section>
   );
-}
+};
