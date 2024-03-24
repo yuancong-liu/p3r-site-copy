@@ -1,0 +1,15 @@
+.dlc-wrapper {
+  padding: 108px 0;
+  background-color: var(--gray-200);
+
+  > .content {
+    max-inline-size: 1280px;
+    margin-inline: auto;
+  }
+
+  > .content > .title {
+    margin-block-end: 120px;
+    font-size: 4rem;
+    text-align: center;
+  }
+}

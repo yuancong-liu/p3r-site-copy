@@ -12,7 +12,7 @@ export const Product = () => {
   };
 
   return (
-    <div className={styles['product-wrapper']}>
+    <section className={styles['product-wrapper']}>
       <h2 className={styles['title']}>BUY NOW!</h2>
       <div className={styles['type-tabs']}>
         <label htmlFor="product-type-package" className={styles['tab']}>
@@ -41,8 +41,9 @@ export const Product = () => {
       {productType === 'package' ? <PackageContent /> : <DigitalContent />}
       <div className={styles['common-part']}>
         <h3 className={styles['title']}>PRE-ORDER GIFT - DLC: P4G BGM SET</h3>
+        <div className={styles['tab-content']}>BGM INTRO</div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,3 +1,5 @@
+import { Brief } from '@/components/brief';
+import { Dlc } from '@/components/dlc';
 import { Header } from '@/components/header';
 import { Leading } from '@/components/leading';
 import { Product } from '@/components/product';
@@ -10,6 +12,8 @@ function App() {
       <Leading />
       <Pv />
       <Product />
+      <Dlc />
+      <Brief />
     </main>
   );
 }
